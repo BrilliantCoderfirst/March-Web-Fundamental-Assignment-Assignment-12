@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Assignment - 12</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(79 84 81);
+            height: 63px;
+            align-items: center;
+            box-shadow: 2px 3px 17px rgb(178 186 185);
+        }
+
+        .logo img {
+            width: 112px;
+        }
+
+        .options ul {
+            display: flex;
+        }
+
+        .options li {
+            padding: 0px 9px;
+            list-style: none;
+
+            font-size: 21px;
+        }
+
+        .options a {
+            text-decoration: none;
+            color: rgb(228, 220, 220);
+        }
+
+        input {
+            padding: 6px 28px;
+            border-radius: 10px;
+        }
+
+        #button-forseach {
+            padding: 6px 16px;
+            color: white;
+            background-color: #8282f8;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+        }
+
+        #button-forseach:hover {
+            background-color: blue;
+        }
+
+        .first {
+            text-align: center;
+        }
+
+        .forflex-1,
+        .forflex-2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .one {
+            box-shadow: 0px 2px 10px #97cbc1;
+            width: 304px;
+            height: 335px;
+            margin: 58px 20px;
+        }
+
+        .one img {
+            height: 180px;
+            width: 300px;
+            object-fit: cover;
+        }
+
+        .one p {
+            padding: 10px 10px;
+            /* text-align: justify; */
+        }
+
+        .button-all {
+            padding: 13px 16px;
+            color: white;
+            background-color: #72c270;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button-all:hover {
+            width: 105px;
+            height: 48px;
+        }
+
+        #forchat {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            width: 500px;
+        }
+
+        #form-one {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        #form-one textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+            resize: none;
+            min-height: 200px;
+        }
+
+        #form-one textarea:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        .chat-button-one {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        .chat-button-two {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="https://wallpaperaccess.com/full/266919.png" alt="Company">
+        </div>
+        <div class="options">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Invention</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="Text" name="search-box" id="search-box">
+            <button id="button-forseach">Search</button>
+        </div>
+    </div>
+
+
+
+    <section class="first">
+
+        <div class="forflex-1">
+            <div class="one">
+                <img src="https://wallpaperaccess.com/full/632200.jpg" alt="Beautiful Images">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, est minima facere quod quaerat
+                    provident laudantium quae nemo dignissimos aliquid.</p>
+                <button class="button-all">Read More</button>
+            </div>
+
+            <div class="one">
+                <img src="https://img.wallpapersafari.com/desktop/1920/1080/54/84/Q9Vpay.jpg" alt="Beautiful Images">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, est minima facere quod quaerat
+                    provident laudantium quae nemo dignissimos aliquid.</p>
+                <button class="button-all">Read More</button>
+            </div>
+            <div class="one">
+                <img src="https://www.freegreatpicture.com/files/photo99/49354-beautiful-hd-wallpaper.jpg"
+                    alt="Beautiful Images">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, est minima facere quod quaerat
+                    provident laudantium quae nemo dignissimos aliquid.</p>
+                <button class="button-all">Read More</button>
+            </div>
+            <div class="one">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj9bqXtQM4BszkzxLjo6t5PoilQO6l4ea0hA&usqp=CAU"
+                    alt="Beautiful Images">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, est minima facere quod quaerat
+                    provident laudantium quae nemo dignissimos aliquid.</p>
+                <button class="button-all">Read More</button>
+            </div>
+        </div>
+
+        <div class="forflex-2">
+            <div class="one">
+                <img src="https://wallpaperaccess.com/full/632197.jpg" alt="Beautiful Images">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, est minima facere quod quaerat
+                    provident laudantium quae nemo dignissimos aliquid.</p>
+                <button class="button-all">Read More</button>
+            </div>
+            <div class="one">
+                <img src="https://wallpapercave.com/wp/wp2605540.jpg" alt="Beautiful Images">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, est minima facere quod quaerat
+                    provident laudantium quae nemo dignissimos aliquid.</p>
+                <button class="button-all">Read More</button>
+            </div>
+            <div class="one">
+                <img src="https://wallpapercave.com/wp/KRlr5HT.jpg" alt="Beautiful Images">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, est minima facere quod quaerat
+                    provident laudantium quae nemo dignissimos aliquid.</p>
+                <button class="button-all">Read More</button>
+            </div>
+
+            <div class="one">
+                <img src="https://cdn.wallpapersafari.com/17/59/a8z2tl.jpg" alt="Beautiful Images">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, est minima facere quod quaerat
+                    provident laudantium quae nemo dignissimos aliquid.</p>
+                <button class="button-all">Read More</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="second" style="text-align: center; margin-bottom: 60px;">
+        <button id="forchat">Chat US</button>
+        <form action="#" id="form-one">
+            <label for="textarea-one">Message</label>
+            <textarea name="textarea-one" id="textarea-one" cols="30" rows="10"></textarea>
+            <button class="chat-button-one">Send</button>
+            <button id="chat-button-one" class="chat-button-one chat-button-two">Close</button>
+        </form>
+    </section>
+
+    <script>
+
+        const getforchatbutton = document.getElementById('forchat');
+        getforchatbutton.addEventListener('click', fun1);
+
+        const getsendbutton = document.getElementById('chat-button-one');
+        getsendbutton.addEventListener('click', fun2);
+
+        function fun1() {
+            document.getElementById('form-one').style.display = 'block';
+        }
+
+        function fun2() {
+            document.getElementById('form-one').style.display = 'none';
+        }
+
+
+    </script>
+</body>
+
+</html>
